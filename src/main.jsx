@@ -5,20 +5,30 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router'
 import Footer from './Components/Footer.jsx'
 import Navbar from './Components/Navbar.jsx'
+import OutletComponet from './Components/Outlet/OutletComponet.jsx'
+import Home from './Pages/Home.jsx'
+import About from './Pages/About.jsx'
+import Contact from './Pages/Contect.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element : <Navbar/>
-  },
-  {
-    path : "about",
-    element : <div>i am About</div>
-  },
-  {
-    path: "footer",
-    Component: Footer
+    Component: OutletComponet,
+    children:[
+      {
+        index:true ,Component: Home
+      },
+      {
+        path : "about",
+        Component: About
+      },
+      {
+        path : "contect",
+        Component: Contact
+      },
+    ]
   }
+ 
 ])
 
 createRoot(document.getElementById('root')).render(
