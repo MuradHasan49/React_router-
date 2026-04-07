@@ -100,7 +100,8 @@ const ProductCard = ({ mealData }) => {
                                     href={strYoutube ? strYoutube : "#"}
                                     target={strYoutube ? "_blank" : "_self"}
                                     rel="noopener noreferrer" 
-                                    className={`px-8 py-3 rounded-xl font-bold transition-all duration-300 shadow-lg active:scale-95 `}
+                                    // className=' px-8 py-3'
+                                   
                                 >
                                     {strYoutube ? "Start Cooking" : "Video Not Available"}
                                 </a>
