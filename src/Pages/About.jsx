@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div className="min-h-screen bg-base-100 text-base-content">
 
-            {/* 1. Hero Section */}
+
             <div className="hero bg-base-200 py-20">
                 <div className="hero-content text-center">
                     <div className="max-w-2xl">
@@ -17,7 +17,6 @@ const About = () => {
                 </div>
             </div>
 
-            {/* 2. Mission & Values (Cards) */}
             <div className="container mx-auto px-4 py-16">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div className="card bg-base-100 shadow-xl border border-base-200">
@@ -43,7 +42,7 @@ const About = () => {
                 </div>
             </div>
 
-            {/* 3. Stats Section */}
+
             <div className="bg-neutral text-neutral-content py-12">
                 <div className="container mx-auto px-4 flex justify-center">
                     <div className="stats stats-vertical lg:stats-horizontal shadow bg-base-100 text-base-content">
@@ -68,7 +67,6 @@ const About = () => {
                 </div>
             </div>
 
-            {/* 4. Team Section */}
             <div className="container mx-auto px-4 py-16">
                 <h2 className="text-4xl font-bold text-center mb-12">Meet the Leaders</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
@@ -84,7 +82,6 @@ const About = () => {
                         <p className="text-sm opacity-70">CEO & Founder</p>
                     </div>
 
-                    {/* Team Member 2 */}
                     <div className="flex flex-col items-center">
                         <div className="avatar mb-4">
                             <div className="w-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -95,7 +92,6 @@ const About = () => {
                         <p className="text-sm opacity-70">CTO</p>
                     </div>
 
-                    {/* Team Member 3 */}
                     <div className="flex flex-col items-center">
                         <div className="avatar mb-4">
                             <div className="w-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -106,7 +102,6 @@ const About = () => {
                         <p className="text-sm opacity-70">Head of Design</p>
                     </div>
 
-                    {/* Team Member 4 */}
                     <div className="flex flex-col items-center">
                         <div className="avatar mb-4">
                             <div className="w-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
