@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const ProductCard = ({ mealData }) => {
 
     if (!mealData) return <div className="text-center p-10">Loading recipe...</div>;
 
-    const { strArea, strMeal, strMealThumb, strCategory, strTags, strInstructions } = mealData;
+    const { strArea, strMeal, strMealThumb, strCategory, strTags, strInstructions, strYoutube } = mealData;
 
     const tagsArray = strTags ? strTags.split(',') : [];
 
@@ -22,10 +23,10 @@ const ProductCard = ({ mealData }) => {
     }
 
     return (
-        <div className="flex justify-center items-center min-h-screen bg-gray-50 p-6">
+        <div className="flex justify-center items-center min-h-[80vh] bg-gray-50 p-6 relative">
+
             <div className="max-w-4xl w-full bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row border border-gray-100">
 
-              
                 <div className="md:w-5/12 relative group">
                     <img
                         src={strMealThumb}
@@ -39,7 +40,7 @@ const ProductCard = ({ mealData }) => {
                     </div>
                 </div>
 
-              
+
                 <div className="md:w-7/12 p-8 md:p-10 flex flex-col">
                     <div className="mb-6">
                         <span className="text-orange-500 font-bold text-sm uppercase tracking-wide">
@@ -58,7 +59,7 @@ const ProductCard = ({ mealData }) => {
                     </div>
 
                     <div className="grid grid-cols-2 gap-8 mb-8">
-                  
+
                         <div className="space-y-3">
                             <h3 className="text-sm font-bold text-gray-800 uppercase border-b border-orange-100 pb-2">
                                 Ingredients
@@ -73,7 +74,7 @@ const ProductCard = ({ mealData }) => {
                             </ul>
                         </div>
 
-    
+
                         <div className="space-y-3">
                             <h3 className="text-sm font-bold text-gray-800 uppercase border-b border-orange-100 pb-2">
                                 Quick Steps
@@ -88,15 +89,24 @@ const ProductCard = ({ mealData }) => {
                         </div>
                     </div>
 
-                    {/* Action Button */}
                     <div className="mt-auto pt-6 border-t border-gray-50 flex items-center justify-between">
                         <div>
                             <p className="text-[10px] text-gray-400 uppercase font-bold">Preparation Time</p>
                             <p className="text-lg font-bold text-gray-800">~ 45 Mins</p>
                         </div>
-                        <button className="bg-gray-900 hover:bg-orange-600 text-white px-8 py-3 rounded-xl font-bold transition-all duration-300 shadow-lg active:scale-95">
-                            Start Cooking
-                        </button>
+                        <div className="flex flex-col gap-2 text-center">
+                            <button className="bg-gray-900 hover:bg-orange-600 text-white px-8 py-3 rounded-xl font-bold transition-all duration-300 shadow-lg active:scale-95">
+                                <a
+                                    href={strYoutube ? strYoutube : "#"}
+                                    target={strYoutube ? "_blank" : "_self"}
+                                    rel="noopener noreferrer" 
+                                    className={`px-8 py-3 rounded-xl font-bold transition-all duration-300 shadow-lg active:scale-95 `}
+                                >
+                                    {strYoutube ? "Start Cooking" : "Video Not Available"}
+                                </a>
+                            </button>
+                            <Link className="bg-orange-900 hover:bg-orange-600 text-white px-8 py-3 rounded-xl font-bold transition-all duration-300 shadow-lg active:scale-95" to="/"><button>Back to Home </button></Link>
+                        </div>
                     </div>
                 </div>
             </div>
