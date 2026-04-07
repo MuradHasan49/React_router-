@@ -13,7 +13,7 @@ const RecipeDetails = () => {
     }, [id]);
 
     if (!dynamicApi) {
-        return <h2>Loading Recipe...</h2>;
+        return <h2 className='text-center'>Loading Recipe...</h2>;
     }
 
     return (
