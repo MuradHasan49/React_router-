@@ -28,9 +28,9 @@ const Navbar = () => {
 
                 <div className="collapse-content lg:hidden z-1">
                     <ul className="menu space-x-10">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Contect</li>
+                        <NavLink to="/"> <li className='py-1.5 px-3'>Home</li></NavLink>
+                        <NavLink to="/about"> <li className='py-1.5 px-3'>About</li></NavLink>
+                        <NavLink to="/contect"> <li className='py-1.5 px-3'>Contect</li></NavLink>
                     </ul>
                 </div>
             </div>

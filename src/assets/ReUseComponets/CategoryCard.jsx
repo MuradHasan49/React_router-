@@ -10,7 +10,6 @@ const CategoryCard = ({ categories }) => {
             <img
                 src={categories.strCategoryThumb}
                 alt={categories.strCategory}
-                /* This now works because it finds the 'group' parent */
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
             />
         </figure>
