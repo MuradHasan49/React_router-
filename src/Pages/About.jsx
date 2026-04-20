@@ -1,10 +1,6 @@
-import React from 'react';
-
 const About = () => {
     return (
         <div className="min-h-screen bg-base-100 text-base-content">
-
-
             <div className="hero bg-base-200 py-20">
                 <div className="hero-content text-center">
                     <div className="max-w-2xl">
@@ -69,7 +65,6 @@ const About = () => {
                 <h2 className="text-4xl font-bold text-center mb-12">Meet the Leaders</h2>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
 
-                    {/* Team Member 1 */}
                     <div className="flex flex-col items-center">
                         <div className="avatar mb-4">
                             <div className="w-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
