@@ -1,9 +1,7 @@
-import React from 'react';
-
 const Contact = () => {
   return (
     <div className="min-h-screen bg-base-100 text-base-content py-12">
-      
+
 
       <div className="text-center max-w-2xl mx-auto mb-12 px-4">
         <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
@@ -14,7 +12,7 @@ const Contact = () => {
 
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex flex-col lg:flex-row gap-12 bg-base-200 rounded-3xl p-8 lg:p-12 shadow-xl">
-          
+
 
           <div className="lg:w-1/3 flex flex-col justify-center space-y-8">
             <div>
@@ -34,7 +32,7 @@ const Contact = () => {
               </div>
               <div>
                 <h3 className="font-bold">Our Office</h3>
-                <p className="opacity-80">123 Tech Avenue, Suite 400<br/>San Francisco, CA 94105</p>
+                <p className="opacity-80">123 Tech Avenue, Suite 400<br />San Francisco, CA 94105</p>
               </div>
             </div>
 
@@ -73,10 +71,10 @@ const Contact = () => {
                     <label className="label">
                       <span className="label-text font-semibold">Your Name</span>
                     </label>
-                    <input 
-                      type="text" 
-                      placeholder="John Doe" 
-                      className="input input-bordered w-full focus:input-primary" 
+                    <input
+                      type="text"
+                      placeholder="John Doe"
+                      className="input input-bordered w-full focus:input-primary"
                     />
                   </div>
 
@@ -84,10 +82,10 @@ const Contact = () => {
                     <label className="label">
                       <span className="label-text font-semibold">Email Address</span>
                     </label>
-                    <input 
-                      type="email" 
-                      placeholder="john@example.com" 
-                      className="input input-bordered w-full focus:input-primary" 
+                    <input
+                      type="email"
+                      placeholder="john@example.com"
+                      className="input input-bordered w-full focus:input-primary"
                     />
                   </div>
 
@@ -95,19 +93,19 @@ const Contact = () => {
                     <label className="label">
                       <span className="label-text font-semibold">Subject</span>
                     </label>
-                    <input 
-                      type="text" 
-                      placeholder="How can we help you?" 
-                      className="input input-bordered w-full focus:input-primary" 
+                    <input
+                      type="text"
+                      placeholder="How can we help you?"
+                      className="input input-bordered w-full focus:input-primary "
                     />
                   </div>
 
-                  <div className="form-control w-full">
+                  <div className="flex flex-col ">
                     <label className="label">
-                      <span className="label-text font-semibold">Message</span>
+                      <span className="label-text font-semibold py-1">Message</span>
                     </label>
-                    <textarea 
-                      className="textarea textarea-bordered h-32 focus:textarea-primary" 
+                    <textarea
+                      className="textarea textarea-bordered h-32 w-full focus:textarea-primary"
                       placeholder="Write your message here..."
                     ></textarea>
                   </div>
