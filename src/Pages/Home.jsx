@@ -39,7 +39,7 @@ const Home = () => {
                             <h1 className='text-3xl font-bold text-gray-500 border-b text-center'> {clickBtn} Meals List</h1>
                             <div className={`${!hidden ? "hidden" : ""} py-6 grid grid-cols-3 gap-4`}>
                                 {!data ? " " :<div className='col-span-3'> <NoMealsFound/> </div>}
-                                {/* { data.categories.map(item => <CategoryCard key={item.idCategory} categories={item} />)} */}
+                                { data.categories.map(item => <CategoryCard key={item.idCategory} categories={item} />)}
                             </div>
                             <MealCard clickBtn={clickBtn} />
                         </div>
