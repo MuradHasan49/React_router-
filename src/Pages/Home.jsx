@@ -1,6 +1,5 @@
 import { Suspense, useState } from 'react'
 import { use } from 'react'
-import CategoryCard from '../assets/ReUseComponets/CategoryCard'
 import MealCard from '../assets/ReUseComponets/MealCard'
 import NoMealsFound from '../assets/ReUseComponets/NoMealsFound'
 
